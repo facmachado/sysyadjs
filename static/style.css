@@ -1,5 +1,15 @@
+/**
+ * style.css - YAD application frontend
+ *
+ * Copyright (c) 2020 Flavio Augusto (@facmachado)
+ *
+ * This software may be modified and distributed under the terms
+ * of the MIT license. See the LICENSE file for details.
+ */
+
+
 body {
-  /* Forçar o body no browser */
+  /** Force body on browser **/
   position: absolute;
   overflow: hidden;
   height: 100%;
@@ -10,13 +20,13 @@ body {
   left: 0;
   top: 0;
 
-  /* Desabilitar seleção */
+  /** Disable selection **/
   -webkit-user-select: none !important;
   -khtml-user-select: none !important;
   -moz-user-select: none !important;
   -o-user-select: none !important;
   user-select: none !important;
 
-  /* Desabilitar scrollbar horizontal */
+  /** Disable horizontal scrollbar **/
   overflow-x: hidden !important;
 }

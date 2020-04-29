@@ -23,11 +23,11 @@
 
 
 /**
- * Test
+ * Start test
  */
 
-describe('0000. Modelo', _ => {
-  it('Teste', done => {
+describe('0000. Model', _ => {
+  it('Single test', done => {
     done();
   });
 });

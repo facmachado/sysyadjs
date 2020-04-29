@@ -1,5 +1,5 @@
 /**
- * 0001-teste-inicial.test.cjs
+ * 0001-first-task.test.cjs
  *
  * Copyright (c) 2020 Flavio Augusto (@facmachado)
  *
@@ -23,11 +23,11 @@ chai.use(ch);
 
 
 /**
- * Test
+ * Start test
  */
 
-describe('0001. Teste inicial', _ => {
-  it('Acessa o servidor', done => {
+describe('0001. First task', _ => {
+  it('Call server', done => {
     chai
       .request('http://localhost:3000/')
       .get('/')
