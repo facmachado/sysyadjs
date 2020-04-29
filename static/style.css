@@ -1,0 +1,22 @@
+body {
+  /* Forçar o body no browser */
+  position: absolute;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  bottom: 0;
+  margin: 0;
+  right: 0;
+  left: 0;
+  top: 0;
+
+  /* Desabilitar seleção */
+  -webkit-user-select: none !important;
+  -khtml-user-select: none !important;
+  -moz-user-select: none !important;
+  -o-user-select: none !important;
+  user-select: none !important;
+
+  /* Desabilitar scrollbar horizontal */
+  overflow-x: hidden !important;
+}
