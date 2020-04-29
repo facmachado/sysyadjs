@@ -1,0 +1,36 @@
+{
+  "name": "sysyadjs",
+  "version": "0.0.1",
+  "description": "YAD browser running a Node.js web application",
+  "type": "module",
+  "main": "app.js",
+  "scripts": {
+    "build": "rollup -c rollup.config.js",
+    "test": "NODE_ENV=testing npm run build && nodejs -r dotenv/config test/test.js dotenv_config_path=lib/testing.env",
+    "development": "NODE_ENV=development nodemon -e 'css html js' -i public -x 'npm run build && nodejs -r dotenv/config . dotenv_config_path=lib/development.env'",
+    "production": "NODE_ENV=production npm run build && nodejs -r dotenv/config . dotenv_config_path=lib/production.env",
+    "start": "npm run development"
+  },
+  "author": "Flavio Augusto (@facmachado)",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "latest",
+    "express": "latest"
+  },
+  "devDependencies": {
+    "chai": "latest",
+    "chai-http": "latest",
+    "clean-css": "latest",
+    "html-minifier": "latest",
+    "jquery": "latest",
+    "mocha": "latest",
+    "nodemon": "latest",
+    "rollup": "latest",
+    "rollup-plugin-copy": "latest",
+    "rollup-plugin-execute": "latest",
+    "@rollup/plugin-node-resolve": "latest",
+    "@rollup/plugin-commonjs": "latest",
+    "@rollup/plugin-legacy": "latest",
+    "terser": "latest"
+  }
+}
